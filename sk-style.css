@@ -1,0 +1,200 @@
+body {
+    background: url(images/background-take-2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 16px;
+}
+.container-fluid2 {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    overflow-x: hidden; 
+}
+a:link {
+    color: #333333;
+}
+a:visited {
+    color: #575757;
+}
+a:hover {
+    color: #6a6a6a;
+}
+.btn {
+    border-radius: 0px;
+}
+.btn-default {
+    background-image: none;
+    background-color: #f2f2f2;
+}
+.form-control {
+    border-radius: 0px;
+}
+.topname h1 {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 72px;
+}
+.container-fluid {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.main {
+    margin-bottom: 20px;
+}
+#hero figure img {
+    max-width: 100%;
+    margin-top: 0px;
+    margin: auto;
+    display: block;
+}
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+}
+a.fb {
+    font-size: 30px;
+    color: #3B5998;
+}
+a.tw {
+    font-size: 30px;
+    color: #05a9f4;
+}
+a.ig {
+    font-size: 30px;
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#footer-list {
+    text-align: left;
+}
+#footer-list ul {
+    list-style-type: none;
+}
+#footer-list .col-sm-4 ul a:link {
+    color: white;
+}
+#footer-list .col-sm-8 ul a:link {
+    color: white;
+}
+#footer-list .col-sm-4 ul a:visited {
+    color: #a6a6a6;
+}
+#footer-list .col-sm-8 ul a:visited {
+    color: #a6a6a6;
+}
+#bottom-icons {
+    text-align: right;
+}
+#bottom-icons li {
+    padding: 13px;
+    position: relative;
+    display: inline;
+}
+#copyright p {
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #ff9999, #ff3636);
+    font-size: 14px;
+    clear: both;
+    position: relative;
+    margin: 0px;
+}
+.tab {
+    text-indent: 40px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #f2f2f2;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+.navbar-default {
+    background-image: none;
+    background-color: black;
+    border-radius: 0px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #d9d9d9;
+}
+.navbar-nav > li > a.fb {
+    font-size: 30px;
+    color: #3B5998;
+}
+.navbar-nav > li > a.tw {
+    font-size: 30px;
+    color: #05a9f4;
+}
+.navbar-nav > li > a.ig {
+    font-size: 30px;
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+    background-image: none;
+    box-shadow: none;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #f2f2f2;
+}
+.dropdown-menu {
+    border-radius: 0px;
+}
+.bandcamp {
+    max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.panel {
+    border-radius: 0px;
+}
+.panel-default > .panel-heading {
+    background-image: none;
+    background-color: #e3e2e2;
+}
+.pagelinks a {
+    text-decoration: underline;
+}
+.cse .gsc-control-cse,.gsc-control-cse {
+    background-color:transparent !important;
+    border: 1px solid #000 !important;
+    padding: none !important;
+}
+
+#show-table {
+    width: 100%;
+}
+
+#show-table td {
+    padding-top: 40px;
+}
+
+@media screen and (max-width:767px) {
+    #bottom-icons {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (min-width: 768px) {
+.navbar-nav>li>a {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+}

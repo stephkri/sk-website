@@ -1,0 +1,64 @@
+html {
+    background: url(images/background-take-1.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.topname h1 {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 72px;
+}
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+a.fb {
+    font-size: 30px;
+    color: #3B5998;
+}
+a.tw {
+    font-size: 30px;
+    color: #05a9f4;
+}
+a.in {
+    font-size: 30px;
+    color: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+#footer-list {
+    text-align: left;
+}
+#footer-list ul {
+    list-style-type: none;
+}
+#footer-list .col-sm-4 ul a:link {
+    color: white;
+}
+#footer-list .col-sm-8 ul a:link {
+    color: white;
+}
+#copyright {
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #ff9999, #ff3636);
+}
+.tab {
+    text-indent: 40px;
+}
+.navbar-inverse {
+    background-image: none;
+    border-radius: 0px;
+}
+.navbar-nav > li > a.fb {
+    font-size: 30px;
+    color: #3B5998;
+}
+.navbar-nav > li > a.tw {
+    font-size: 30px;
+    color: #05a9f4;
+}
+.navbar-nav > li > a.in {
+    font-size: 30px;
+    color: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
