@@ -1,1 +1,5 @@
-images/**
+*.jpeg
+
+*.jpg
+
+*.png
