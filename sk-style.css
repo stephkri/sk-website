@@ -103,7 +103,8 @@ a.ig {
 }
 #copyright p {
     text-align: center;
-    background-image: linear-gradient(to bottom right, #ff9999, #ff3636);
+    /*background-image: linear-gradient(to bottom right, #ff9999, #ff3636);*/
+    background-color: transparent;
     font-size: 14px;
     clear: both;
     position: relative;
