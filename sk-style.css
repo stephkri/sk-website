@@ -112,6 +112,9 @@ a.ig {
 .tab {
     text-indent: 40px;
 }
+.full-tab {
+    margin-left: 40px;
+}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #555;
     background-color: #f2f2f2;
