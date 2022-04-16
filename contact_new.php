@@ -185,7 +185,7 @@
                                     if (!$success) {
                                         echo '<div style="color: red;" >Message Failed &#128078; there was an error sending your  message.</div>';
                                     } else {
-                                        echo ' <div style="color:blue; text-align:center;" > Thanks for contacting me.  I will respond to your message within 24 hours. </div>';
+                                        echo ' <div style="color:blue; text-align:center;" > Thanks for contacting me.  I will respond to your message soon! </div>';
                                     } 
                                 }
                             } 	
