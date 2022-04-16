@@ -175,7 +175,7 @@
                                     <table style='border-color: #666;' cellpadding='10' width='697'>
                                     <tr><td colspan='2'><h2 style='background: #eaf1dd; color:#660066'><strong>Message posted from SK website:</strong></h2></td> </tr>
                                     <tr><td colspan='2'> Below is the message from:</td></tr>
-                                    <tr><td>Fome: </td><td>$name</td></tr> 
+                                    <tr><td>From: </td><td>$name</td></tr> 
                                     <tr><td>Message: </td><td>$message</td>
                                     </table>
                                     </body>
