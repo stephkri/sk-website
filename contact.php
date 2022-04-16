@@ -108,9 +108,6 @@
                     
                     <p>To request my services, inquire about anything you've seen on here, or just say hi - please fill out the form below and I'll get back to you as soon as I can!</p>
                     
-                    <p>You can also email me at <a href="&#x6d;&#00097;&#x69;&#000108;&#x74;&#111;&#x3a;&#115;&#x74;&#x65;&#x70;&#x68;&#x61;&#000110;&#x65;&#x2e;&#000107;&#114;&#000105;&#000109;&#x73;&#64;&#x68;&#111;&#116;&#000109;&#97;&#x69;&#000108;&#00046;&#x63;&#x61;" >&#x73;&#000116;&#101;&#x70;&#104;&#x61;&#x6e;&#x65;&#46;&#x6b;&#x72;&#x69;&#000109;&#x73;&#x40;&#000104;&#x6f;&#x74;&#x6d;&#x61;&#x69;&#000108;&#00046;&#99;&#00097;</a>.</p>
-            
-                    
                     
                     
                     <?php
