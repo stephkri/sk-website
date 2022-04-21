@@ -114,7 +114,7 @@
                     
                     $error = false;
                     // Include the SASLA (Simple Anti Spam Lite Approach) class SPAM protection.
-                    require 'sasla.php';
+                    require '../sasla.php';
                     if(isset($_POST['submit']) && !empty($_POST['submit'])) {
                         if (Sasla::isASpam()) {
                             echo '<div style="color: red; text-align:center;" >&#128078; Message failed to pass first spam check validation. </div>';
