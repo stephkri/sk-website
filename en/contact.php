@@ -9,7 +9,7 @@
         <meta name="description" content="Get in touch with Stéphane Krims to inquire about services as a musician and educator.">
         <meta property="og:type" content="business.business">
         <meta property="og:title" content="Contact - Stéphane Krims">
-        <meta property="og:url" content="http://www.stephanekrims.com/contact.html">
+        <meta property="og:url" content="http://www.stephanekrims.com/en/contact.html">
         <meta property="og:image" content="showpic11-edited.png">
         <meta property="business:contact_data:street_address" content="3591 boul. Gouin E #301">
         <meta property="business:contact_data:locality" content="Montréal-Nord">
