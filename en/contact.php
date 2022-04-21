@@ -96,7 +96,7 @@
             
             <div id="hero" class="row">
                 <figure>
-                    <img src="images/showpic11-edited.png" alt="Image of upwards of 30 people all singing together onstage, including Stéphane who is playing a bass. Photo by Romeo Bruni.">
+                    <img src="../images/showpic11-edited.png" alt="Image of upwards of 30 people all singing together onstage, including Stéphane who is playing a bass. Photo by Romeo Bruni.">
                 </figure>
             </div>
         
