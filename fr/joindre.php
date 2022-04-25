@@ -197,23 +197,23 @@
                     
                 <form action="" method="post">
                         <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" class="form-control" id="name" name="name" value="<?php echo $name; ?>" placeholder="Enter name">
+                        <label for="name">Votre nom:</label>
+                        <input type="text" class="form-control" id="name" name="name" value="<?php echo $name; ?>" placeholder="Entrer votre nom">
                         <span style="color:red; font-size:14px;"><?php echo $nameError; ?></span>
                       </div>
                       <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email" value="<?php echo $email; ?>"  placeholder="Enter email">
+                        <label for="email">Adresse courriel:</label>
+                        <input type="email" class="form-control" id="email" name="email" value="<?php echo $email; ?>"  placeholder="Entrer votre adresse courriel">
                         <span style="color:red; font-size:14px;"><?php echo $emailError; ?></span>
                       </div>
                       <div class="form-group">
-                        <label for="subject">Subject:</label>
-                        <input type="text" class="form-control" id="subject" name="subject" value="<?php echo $subject; ?>" placeholder="Enter subject">
+                        <label for="subject">Sujet:</label>
+                        <input type="text" class="form-control" id="subject" name="subject" value="<?php echo $subject; ?>" placeholder="Entrer le sujet">
                         <span style="color:red; font-size:14px;"><?php echo $subjectError; ?></span>
                         <input type="hidden" class="form-control" id="subject" name="website" >
                       </div>
                       <div class="form-group">
-                        <label for="message">Message:</label>
+                        <label for="message">Votre message:</label>
                         <textarea class="form-control" rows="5" id="message" name="message"><?php echo $message; ?></textarea>
                         <span style="color:red; font-size:14px;"><?php echo $messageError; ?></span>
                       </div>
