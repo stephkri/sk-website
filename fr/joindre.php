@@ -127,29 +127,29 @@
                                                
                             if (empty($name)) { 
                                 $error = true; 
-                                $nameError = "Please enter your first name.";	
+                                $nameError = "Veuillez écrire votre prénom.";	
                             } else if (strlen($name) < 3) {
                                 $error = true;
-                                $nameError = "The first name field must have at least 3 characters.";
+                                $nameError = "Il faut que votre nom aie au moins 3 caractères.";
                             } else if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
                                 $error = true;
-                                $nameError = "The first name field must contain alphabets and space.";
+                                $nameError = "Il faut que votre nom aie des caractères d'alphabets et d'espaces.";
                             }
                             if (empty($subject)) { 
                                 $error = true; 
-                                $subjectError = "Please enter a subject.";	
+                                $subjectError = "Veuillez écrire un sujet.";	
                             }
                             if(!preg_match("/^[a-zA-Z ]+$/",$subject)) {
                                 $error = true;
-                                $subjectError = "The subject must contain only letters and space.";
+                                $subjectError = "Il faut que le sujet n'aie que des lettres et des espaces.";
                             }
                             if (!filter_var($email,FILTER_VALIDATE_EMAIL) ) {
                                 $error = true;
-                                $emailError = "Please enter valid email address.";
+                                $emailError = "Veuillez entrer une adresse courriel valide.";
                             }
                              if (empty($message)) { 
                                 $error = true; 
-                                $messageError = "Please enter a subject.";	
+                                $messageError = "Veuillez écrire un message.";	
                             }
                             
                             if (!$error) {

@@ -149,7 +149,7 @@
                             }
                              if (empty($message)) { 
                                 $error = true; 
-                                $messageError = "Please enter a subject.";	
+                                $messageError = "Please enter a message.";	
                             }
                             
                             if (!$error) {
