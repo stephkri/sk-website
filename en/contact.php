@@ -170,19 +170,18 @@
                                     <html>
                                     <body>
                                     <table style='border-color: #666;' cellpadding='10' width='697'>
-                                    <tr><td colspan='2'><h2 style='color:#660066'><strong>Message sent via website contact form:</strong></h2></td> </tr>
-                                    <tr><td colspan='2'> Below is the message from:</td></tr>
+                                    <tr><td colspan='2'><h2 style='color:#b32400'><strong>Message sent via website contact form:</strong></h2></td> </tr>
                                     <tr><td>From: </td><td>$name</td></tr> 
-                                    <tr><td>Message: </td><td>$message</td>
+                                    <tr><td>Message: </td><td>$message</td></tr>
                                     </table>
                                     </body>
                                     </html>
                                     ";
                                     $success = mail($to,$subject,$body,$headers);
                                     if (!$success) {
-                                        echo '<div style="color: red;" >Message Failed &#128078; there was an error sending your  message.</div>';
+                                        echo '<div style="color: red;" >Message Failed &#128078; there was an error sending your message.</div>';
                                     } else {
-                                        echo ' <div style="color:blue; text-align:center;" > Thanks for contacting me.  I will respond to your message soon! </div>';
+                                        echo ' <div style="color:blue; text-align:center;" > Thanks for contacting me. I will respond to your message soon! </div>';
                                     } 
                                 }
                             } 	
