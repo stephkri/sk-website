@@ -2,14 +2,14 @@
 <html lang="fr">
     <head>
         <meta charset=utf-8>
-        <title>Contact - Stéphane Krims</title>
+        <title>Me joindre - Stéphane Krims</title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
-        <meta name="description" content="Get in touch with Stéphane Krims to inquire about services as a musician and educator.">
+        <meta name="description" content="Se joindre à Stéphane Krims pour s'informer de ses services en tant que musicien.ne et enseignant.e.">
         <meta property="og:type" content="business.business">
-        <meta property="og:title" content="Contact - Stéphane Krims">
-        <meta property="og:url" content="http://www.stephanekrims.com/en/contact.html">
+        <meta property="og:title" content="Me joindre - Stéphane Krims">
+        <meta property="og:url" content="http://www.stephanekrims.com/fr/joindre.html">
         <meta property="og:image" content="showpic11-edited.png">
         <meta property="business:contact_data:street_address" content="3591 boul. Gouin E #301">
         <meta property="business:contact_data:locality" content="Montréal-Nord">
@@ -20,11 +20,11 @@
         <!--Twitter Card data-->
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@litsmirk">
-        <meta name="twitter:title" content="Contact - Stéphane Krims">
-        <meta name="twitter:description" content="Get in touch with Stéphane Krims to inquire about services as a musician and educator.">
+        <meta name="twitter:title" content="Me joindre - Stéphane Krims">
+        <meta name="twitter:description" content="Se joindre à Stéphane Krims pour s'informer de ses services en tant que musicien.ne et enseignant.e.">
         <meta name="twitter:creator" content="@litsmirk">
         <meta name="twitter:image" content="showpic11-edited.jpg">
-        <meta name="twitter:alt" content="Image of upwards of 30 people all singing together onstage, including Stéphane who is playing a bass. Photo by Romeo Bruni.">
+        <meta name="twitter:alt" content="Image de plus de 30 personnes qui chantent ensemble sur scène, incluant Stéphane qui joue une basse. Photo de Romeo Bruni.">
     
     
         <meta name="robots" content="index,follow" />
@@ -72,10 +72,10 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="bio.html">About</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="bio.html">À propos</a></li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Music<span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Musique<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a href="services.html">Services</a></li>
                         <li><a href="discog.html">Discography</a></li>
