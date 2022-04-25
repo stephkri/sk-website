@@ -78,12 +78,12 @@
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Musique<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="discog.html">Discography</a></li>
-                        <li><a href="shows.html">Upcoming Performances</a></li>
+                        <li><a href="discog.html">Discographie</a></li>
+                        <li><a href="shows.html">Prestations à venir</a></li>
                       </ul>
                     </li>
-                    <li><a href="aos.html">AOS</a></li>
-                      <li class="active"><a href="#">Contact<span class="sr-only">(current)</span></a></li>
+                    <li><a href="dao.html">DAO</a></li>
+                      <li class="active"><a href="#">Me joindre<span class="sr-only">(actuel)</span></a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://www.facebook.com/stephanekrimsofficiel/" target="_blank" rel="noopener noreferrer" class="fb fa fa-facebook-square"></a></li>
@@ -96,7 +96,7 @@
             
             <div id="hero" class="row">
                 <figure>
-                    <img src="../images/showpic11-edited.png" alt="Image of upwards of 30 people all singing together onstage, including Stéphane who is playing a bass. Photo by Romeo Bruni.">
+                    <img src="../images/showpic11-edited.png" alt="Image de plus de 30 personnes qui chantent ensemble sur scène, incluant Stéphane qui joue une basse. Photo de Romeo Bruni.">
                 </figure>
             </div>
         
