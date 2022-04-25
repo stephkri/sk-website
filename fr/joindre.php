@@ -104,9 +104,9 @@
                 
                 <div class="container">
                     
-                    <h1>Contact Me</h1>
+                    <h1>Me joindre</h1>
                     
-                    <p>To request my services, inquire about anything you've seen on here, or just say hi - please fill out the form below and I'll get back to you as soon as I can!</p>
+                    <p>Pour des demandes de service, des questions sur quoi que ce soit sur ce site-ci, ou simplement dire bonjour - veuillez remplir le formulaire et je vous répondrai sous peu.</p>
                     
                     
                     
