@@ -86,6 +86,7 @@
                       <li class="active"><a href="#">Contact<span class="sr-only">(current)</span></a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../fr/joindre.php">FR</a></li>
                     <li><a href="https://www.facebook.com/stephanekrimsofficiel/" target="_blank" rel="noopener noreferrer" class="fb fa fa-facebook-square"></a></li>
                     <li><a href="https://www.instagram.com/stephanekrims/" target="_blank" rel="noopener noreferrer" class="ig fa fa-instagram"></a></li>
                     <li><a href="https://www.twitter.com/litsmirk" target="_blank" rel="noopener noreferrer" class="tw fa fa-twitter-square"></a></li>
