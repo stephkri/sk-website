@@ -103,7 +103,7 @@ a.ig {
 #bottom-icons {
     text-align: right;
 }
-#bottom-icons li {
+#bottom-icons li, #welcome-bottom-icons li {
     padding: 13px;
     position: relative;
     display: inline;
