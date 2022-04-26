@@ -211,10 +211,11 @@ a.ig {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 .langbutton:hover {
-    filter: drop-shadow(5px 5px 2px grey);
+    filter: drop-shadow(1px 1px 2px grey);
 }
 
 .langbutton a {
