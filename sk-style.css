@@ -233,6 +233,10 @@ a.ig {
         margin: 0;
         padding: 0;
     }
+
+    #welcome-hero figure img {
+        max-height: 300px;
+    }
 }
 @media (min-width: 768px) {
 .navbar-nav>li>a {
