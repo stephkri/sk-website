@@ -59,12 +59,15 @@ a:hover {
     margin: auto;
     display: block;
 }
-#footer {
+#footer, #welcome-footer {
     background-color: black;
     color: white;
     text-align: center;
     padding-top: 15px;
     font-size: 14px;
+}
+#welcome-footer {
+    padding-bottom: 10px;
 }
 a.fb {
     font-size: 30px;
