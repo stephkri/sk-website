@@ -217,6 +217,15 @@ a.ig {
     filter: drop-shadow(5px 5px 2px grey);
 }
 
+.langbutton a {
+    color: black;
+}
+
+.langbutton a:hover {
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+}
+
 @media screen and (max-width:767px) {
     #bottom-icons {
         text-align: center;
