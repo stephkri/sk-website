@@ -46,18 +46,14 @@ a:hover {
 .main {
     margin-bottom: 20px;
 }
-#hero figure img {
+#hero figure img, #welcome-hero figure img {
     max-width: 100%;
     margin-top: 0px;
     margin: auto;
     display: block;
 }
 #welcome-hero figure img {
-    max-width: 100%;
     max-height: 600px;
-    margin-top: 0px;
-    margin: auto;
-    display: block;
 }
 #footer, #welcome-footer {
     background-color: black;
