@@ -213,6 +213,10 @@ a.ig {
     border-radius: 5px;
 }
 
+.langbutton:hover {
+    filter: drop-shadow(5px 5px 2px grey);
+}
+
 @media screen and (max-width:767px) {
     #bottom-icons {
         text-align: center;
