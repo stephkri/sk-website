@@ -204,6 +204,15 @@ a.ig {
     padding-bottom: 40px;
 }
 
+.langbutton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
 @media screen and (max-width:767px) {
     #bottom-icons {
         text-align: center;
