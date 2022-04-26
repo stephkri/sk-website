@@ -52,6 +52,13 @@ a:hover {
     margin: auto;
     display: block;
 }
+#welcome-hero figure img {
+    max-width: 100%;
+    max-height: 600px;
+    margin-top: 0px;
+    margin: auto;
+    display: block;
+}
 #footer {
     background-color: black;
     color: white;
