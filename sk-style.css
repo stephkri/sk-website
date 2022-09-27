@@ -186,11 +186,11 @@ a.ig {
     padding: none !important;
 }
 
-#show-table {
+.show-table {
     width: 100%;
 }
 
-#show-table td {
+.show-table td {
     padding-top: 40px;
 }
 
