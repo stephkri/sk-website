@@ -79,7 +79,7 @@
                       <ul class="dropdown-menu">
                         <li><a href="services.html">Services</a></li>
                         <li><a href="discog.html">Discographie</a></li>
-                        <li><a href="shows.html">Prestations à venir</a></li>
+                        <li><a href="shows.html">Prestations</a></li>
                       </ul>
                     </li>
                     <li><a href="dao.html">DAO</a></li>
@@ -257,7 +257,7 @@
                             <ul>
                               <li><a href="services.html">Services</a></li>
                               <li><a href="discog.html">Discographie</a></li>
-                                <li><a href="shows.html">Prestations à venir</a></li>
+                                <li><a href="shows.html">Prestations</a></li>
                             </ul>
                           </li>
                         </ul>
