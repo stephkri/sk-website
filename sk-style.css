@@ -194,6 +194,15 @@ a.ig {
     padding-top: 40px;
 }
 
+.sold-out {
+    color: red;
+}
+
+.sold-out a {
+    color: rgb(133, 10, 10);
+    text-decoration: line-through;
+}
+
 .welcome-main {
     display: flex;
     justify-content: center;
