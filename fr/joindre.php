@@ -170,10 +170,10 @@
                                     $body = "
                                     <html>
                                     <body>
-                                    <table style='border-color: #666;' cellpadding='10' width='697'>
-                                    <tr><td colspan='2'><h2 style='color:#b32400'><strong>Message envoyé par le formulaire contact du site web:</strong></h2></td> </tr>
-                                    <tr><td>De: </td><td>$name</td></tr>
-                                    <tr><td>Message: </td><td>$message</td></tr>
+                                    <table style='border-color: #666; font-family: Arial, Helvetica, sans-serif;' cellpadding='10' width='697'>
+                                    <tr><td colspan='2'><h3 style='color:#e020e4'><strong>Vous avez un nouveau message envoyé par la forme de contact de votre site web!</strong></h3></td> </tr>
+                                    <tr><td><strong>De:</strong> </td><td>$name</td></tr> 
+                                    <tr><td><strong>Message:</strong> </td><td>$message</td></tr>
                                     </table>
                                     </body>
                                     </html>
