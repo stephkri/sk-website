@@ -46,18 +46,24 @@ a:hover {
 .main {
     margin-bottom: 20px;
 }
-#hero figure img {
+#hero figure img, #welcome-hero figure img {
     max-width: 100%;
     margin-top: 0px;
     margin: auto;
     display: block;
 }
-#footer {
+#welcome-hero figure img {
+    max-height: 600px;
+}
+#footer, #welcome-footer {
     background-color: black;
     color: white;
     text-align: center;
     padding-top: 15px;
     font-size: 14px;
+}
+#welcome-footer {
+    padding-bottom: 10px;
 }
 a.fb {
     font-size: 30px;
@@ -96,7 +102,7 @@ a.ig {
 #bottom-icons {
     text-align: right;
 }
-#bottom-icons li {
+#bottom-icons li, #welcome-bottom-icons li {
     padding: 13px;
     position: relative;
     display: inline;
@@ -180,12 +186,54 @@ a.ig {
     padding: none !important;
 }
 
-#show-table {
+.show-table {
     width: 100%;
 }
 
-#show-table td {
+.show-table td {
     padding-top: 40px;
+}
+
+.sold-out {
+    color: red;
+}
+
+.sold-out a {
+    color: rgb(133, 10, 10);
+    text-decoration: line-through;
+}
+
+.welcome-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.langbutton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.langbutton:hover {
+    filter: drop-shadow(1px 1px 2px grey);
+}
+
+.langbutton a {
+    color: black;
+}
+
+.langbutton a:hover {
+    color: rgb(50, 50, 50);
+    text-decoration: none;
 }
 
 @media screen and (max-width:767px) {
@@ -193,6 +241,10 @@ a.ig {
         text-align: center;
         margin: 0;
         padding: 0;
+    }
+
+    #welcome-hero figure img {
+        max-height: 300px;
     }
 }
 @media (min-width: 768px) {

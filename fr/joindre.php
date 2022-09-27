@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="fr">
     <head>
         <meta charset=utf-8>
-        <title>Contact - Stéphane Krims</title>
+        <title>Me joindre - Stéphane Krims</title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
-        <meta name="description" content="Get in touch with Stéphane Krims to inquire about services as a musician and educator.">
+        <meta name="description" content="Se joindre à Stéphane Krims pour s'informer de ses services en tant que musicien.ne et enseignant.e.">
         <meta property="og:type" content="business.business">
-        <meta property="og:title" content="Contact - Stéphane Krims">
-        <meta property="og:url" content="http://www.stephanekrims.com/contact.html">
+        <meta property="og:title" content="Me joindre - Stéphane Krims">
+        <meta property="og:url" content="http://www.stephanekrims.com/fr/joindre.html">
         <meta property="og:image" content="showpic11-edited.png">
         <meta property="business:contact_data:street_address" content="3591 boul. Gouin E #301">
         <meta property="business:contact_data:locality" content="Montréal-Nord">
@@ -20,11 +20,11 @@
         <!--Twitter Card data-->
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@litsmirk">
-        <meta name="twitter:title" content="Contact - Stéphane Krims">
-        <meta name="twitter:description" content="Get in touch with Stéphane Krims to inquire about services as a musician and educator.">
+        <meta name="twitter:title" content="Me joindre - Stéphane Krims">
+        <meta name="twitter:description" content="Se joindre à Stéphane Krims pour s'informer de ses services en tant que musicien.ne et enseignant.e.">
         <meta name="twitter:creator" content="@litsmirk">
         <meta name="twitter:image" content="showpic11-edited.jpg">
-        <meta name="twitter:alt" content="Image of upwards of 30 people all singing together onstage, including Stéphane who is playing a bass. Photo by Romeo Bruni.">
+        <meta name="twitter:alt" content="Image de plus de 30 personnes qui chantent ensemble sur scène, incluant Stéphane qui joue une basse. Photo de Romeo Bruni.">
     
     
         <meta name="robots" content="index,follow" />
@@ -45,7 +45,7 @@
         <!-- Font Awesome CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
-        <link href="sk-style.css" rel="stylesheet">
+        <link href="../sk-style.css" rel="stylesheet">
         
     </head>
     <body>
@@ -72,20 +72,21 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="bio.html">About</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="bio.html">À propos</a></li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Music<span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Musique<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="discog.html">Discography</a></li>
-                        <li><a href="shows.html">Upcoming Performances</a></li>
+                        <li><a href="discog.html">Discographie</a></li>
+                        <li><a href="shows.html">Prestations</a></li>
                       </ul>
                     </li>
-                    <li><a href="aos.html">AOS</a></li>
-                      <li class="active"><a href="#">Contact<span class="sr-only">(current)</span></a></li>
+                    <li><a href="dao.html">DAO</a></li>
+                      <li class="active"><a href="#">Me joindre<span class="sr-only">(actuel)</span></a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../en/contact.php">EN</a></li>
                     <li><a href="https://www.facebook.com/stephanekrimsofficiel/" target="_blank" rel="noopener noreferrer" class="fb fa fa-facebook-square"></a></li>
                     <li><a href="https://www.instagram.com/stephanekrims/" target="_blank" rel="noopener noreferrer" class="ig fa fa-instagram"></a></li>
                     <li><a href="https://www.twitter.com/litsmirk" target="_blank" rel="noopener noreferrer" class="tw fa fa-twitter-square"></a></li>
@@ -96,7 +97,7 @@
             
             <div id="hero" class="row">
                 <figure>
-                    <img src="images/showpic11-edited.png" alt="Image of upwards of 30 people all singing together onstage, including Stéphane who is playing a bass. Photo by Romeo Bruni.">
+                    <img src="../images/showpic11-edited.png" alt="Image de plus de 30 personnes qui chantent ensemble sur scène, incluant Stéphane qui joue une basse. Photo de Romeo Bruni.">
                 </figure>
             </div>
         
@@ -104,9 +105,9 @@
                 
                 <div class="container">
                     
-                    <h1>Contact Me</h1>
+                    <h1>Me joindre</h1>
                     
-                    <p>To request my services, inquire about anything you've seen on here, or just say hi - please fill out the form below and I'll get back to you as soon as I can!</p>
+                    <p>Pour des demandes de service, des questions sur quoi que ce soit sur ce site-ci, ou simplement dire bonjour - veuillez remplir le formulaire et je vous répondrai sous peu.</p>
                     
                     
                     
@@ -114,7 +115,7 @@
                     
                     $error = false;
                     // Include the SASLA (Simple Anti Spam Lite Approach) class SPAM protection.
-                    require 'sasla.php';
+                    require '../sasla.php';
                     if(isset($_POST['submit']) && !empty($_POST['submit'])) {
                         if (Sasla::isASpam()) {
                             echo '<div style="color: red; text-align:center;" >&#128078; Message failed to pass first spam check validation. </div>';
@@ -127,29 +128,29 @@
                                                
                             if (empty($name)) { 
                                 $error = true; 
-                                $nameError = "Please enter your first name.";	
+                                $nameError = "Veuillez écrire votre prénom.";	
                             } else if (strlen($name) < 3) {
                                 $error = true;
-                                $nameError = "The first name field must have at least 3 characters.";
+                                $nameError = "Il faut que votre nom aie au moins 3 caractères.";
                             } else if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
                                 $error = true;
-                                $nameError = "The first name field must contain alphabets and space.";
+                                $nameError = "Il faut que votre nom aie des caractères d'alphabets et d'espaces.";
                             }
                             if (empty($subject)) { 
                                 $error = true; 
-                                $subjectError = "Please enter a subject.";	
+                                $subjectError = "Veuillez écrire un sujet.";	
                             }
                             if(!preg_match("/^[a-zA-Z ]+$/",$subject)) {
                                 $error = true;
-                                $subjectError = "The subject must contain only letters and space.";
+                                $subjectError = "Il faut que le sujet n'aie que des lettres et des espaces.";
                             }
                             if (!filter_var($email,FILTER_VALIDATE_EMAIL) ) {
                                 $error = true;
-                                $emailError = "Please enter valid email address.";
+                                $emailError = "Veuillez entrer une adresse courriel valide.";
                             }
                              if (empty($message)) { 
                                 $error = true; 
-                                $messageError = "Please enter a subject.";	
+                                $messageError = "Veuillez écrire un message.";	
                             }
                             
                             if (!$error) {
@@ -170,19 +171,18 @@
                                     <html>
                                     <body>
                                     <table style='border-color: #666;' cellpadding='10' width='697'>
-                                    <tr><td colspan='2'><h2 style='background: #eaf1dd; color:#660066'><strong>Message sent via website contact form:</strong></h2></td> </tr>
-                                    <tr><td colspan='2'> Below is the message from:</td></tr>
-                                    <tr><td>From: </td><td>$name</td></tr> 
-                                    <tr><td>Message: </td><td>$message</td>
+                                    <tr><td colspan='2'><h2 style='color:#b32400'><strong>Message envoyé par le formulaire contact du site web:</strong></h2></td> </tr>
+                                    <tr><td>De: </td><td>$name</td></tr>
+                                    <tr><td>Message: </td><td>$message</td></tr>
                                     </table>
                                     </body>
                                     </html>
                                     ";
                                     $success = mail($to,$subject,$body,$headers);
                                     if (!$success) {
-                                        echo '<div style="color: red;" >Message Failed &#128078; there was an error sending your  message.</div>';
+                                        echo '<div style="color: red;" >Échec du message &#128078; on n\'a pas réussi à envoyer votre message.</div>';
                                     } else {
-                                        echo ' <div style="color:blue; text-align:center;" > Thanks for contacting me.  I will respond to your message soon! </div>';
+                                        echo ' <div style="color:blue; text-align:center;" > Merci de m\'avoir envoyé un message. Je vous répondrai sous peu!</div>';
                                     } 
                                 }
                             } 	
@@ -198,23 +198,23 @@
                     
                 <form action="" method="post">
                         <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" class="form-control" id="name" name="name" value="<?php echo $name; ?>" placeholder="Enter name">
+                        <label for="name">Votre nom:</label>
+                        <input type="text" class="form-control" id="name" name="name" value="<?php echo $name; ?>" placeholder="Entrer votre nom">
                         <span style="color:red; font-size:14px;"><?php echo $nameError; ?></span>
                       </div>
                       <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email" value="<?php echo $email; ?>"  placeholder="Enter email">
+                        <label for="email">Adresse courriel:</label>
+                        <input type="email" class="form-control" id="email" name="email" value="<?php echo $email; ?>"  placeholder="Entrer votre adresse courriel">
                         <span style="color:red; font-size:14px;"><?php echo $emailError; ?></span>
                       </div>
                       <div class="form-group">
-                        <label for="subject">Subject:</label>
-                        <input type="text" class="form-control" id="subject" name="subject" value="<?php echo $subject; ?>" placeholder="Enter subject">
+                        <label for="subject">Sujet:</label>
+                        <input type="text" class="form-control" id="subject" name="subject" value="<?php echo $subject; ?>" placeholder="Entrer le sujet">
                         <span style="color:red; font-size:14px;"><?php echo $subjectError; ?></span>
                         <input type="hidden" class="form-control" id="subject" name="website" >
                       </div>
                       <div class="form-group">
-                        <label for="message">Message:</label>
+                        <label for="message">Votre message:</label>
                         <textarea class="form-control" rows="5" id="message" name="message"><?php echo $message; ?></textarea>
                         <span style="color:red; font-size:14px;"><?php echo $messageError; ?></span>
                       </div>
@@ -251,13 +251,13 @@
                 
                     <div class="col-sm-4">
                         <ul>
-                          <li><a href="index.html">Home</a></li>
-                            <li><a href="bio.html">About</a></li>
-                            <li>Music <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                          <li><a href="index.html">Accueil</a></li>
+                            <li><a href="bio.html">À propos</a></li>
+                            <li>Musique <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
                             <ul>
                               <li><a href="services.html">Services</a></li>
-                              <li><a href="discog.html">Discography</a></li>
-                                <li><a href="shows.html">Upcoming Performances</a></li>
+                              <li><a href="discog.html">Discographie</a></li>
+                                <li><a href="shows.html">Prestations</a></li>
                             </ul>
                           </li>
                         </ul>
@@ -265,8 +265,8 @@
                     
                     <div class="col-sm-8">
                         <ul>
-                          <li><a href="aos.html">Anti-Oppression Statement</a></li>
-                            <li><a href="#">Contact</a></li>
+                          <li><a href="dao.html">Déclaration antioppressive</a></li>
+                            <li><a href="#">Me joindre</a></li>
                         </ul>
                     </div>
                 
@@ -283,6 +283,6 @@
                 
         </div>
         </div>
-        <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "ui77jQimcq");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+        <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "ui77jQimcq");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Veuillez vous assurez que Javascript est bien activé, question d'<a href="https://userway.org">accessibilité du site web</a></noscript>
     </body>
 </html>
