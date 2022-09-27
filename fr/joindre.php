@@ -107,7 +107,7 @@
                     
                     <h1>Me joindre</h1>
                     
-                    <p>Pour des demandes de service, des questions sur quoi que ce soit sur ce site-ci, ou simplement dire bonjour - veuillez remplir le formulaire et je vous répondrai sous peu.</p>
+                    <p>Pour des demandes de service, des questions sur quoi que ce soit sur ce site-ci, ou simplement dire bonjour - veuillez remplir le formulaire et je vous répondrai sous peu!</p>
                     
                     
                     
