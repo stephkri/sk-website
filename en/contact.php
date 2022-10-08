@@ -159,7 +159,7 @@
                                     die();
                                  } else {
                                     $subject = isset($_POST['subject']) ? trim($_POST['subject']) : '';
-                                   $to = "stephane.krims@hotmail.ca";
+                                   $to = "musikrims@gmail.com";
                                     $from = $email;
                                     $subject = $subject;
                                     $headers = "From: $from" . "\r\n";
