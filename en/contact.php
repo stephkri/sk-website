@@ -277,7 +277,7 @@
         <div id="copyright">
             <div id="crtext">
                 
-            <p>© 2022 Stéphane Krims</p>
+            <p>© 2023 Stéphane Krims</p>
                 
             </div>
                 
