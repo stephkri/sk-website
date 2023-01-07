@@ -159,7 +159,8 @@ a.yt {
     -webkit-background-clip: text;
 }
 .navbar-nav > li > a.yt {
-    
+    font-size: 30px;
+    color: #ff0000;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
     background-image: none;
