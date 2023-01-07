@@ -81,6 +81,10 @@ a.ig {
     background-clip: text;
     -webkit-background-clip: text;
 }
+a.yt {
+    font-size: 30px;
+    color: #ff0000;
+}
 #footer-list {
     text-align: left;
 }
@@ -153,6 +157,10 @@ a.ig {
     background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background-clip: text;
     -webkit-background-clip: text;
+}
+.navbar-nav > li > a.yt {
+    font-size: 30px;
+    color: #ff0000;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
     background-image: none;
