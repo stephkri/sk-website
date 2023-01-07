@@ -158,6 +158,9 @@ a.yt {
     background-clip: text;
     -webkit-background-clip: text;
 }
+.navbar-nav > li > a.yt {
+    
+}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
     background-image: none;
     box-shadow: none;
