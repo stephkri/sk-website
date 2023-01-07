@@ -82,7 +82,8 @@ a.ig {
     -webkit-background-clip: text;
 }
 a.yt {
-    
+    font-size: 30px;
+    color: #ff0000;
 }
 #footer-list {
     text-align: left;
