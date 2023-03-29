@@ -129,7 +129,7 @@
                             $nameHasLink = strpos($name, 'http') !== false || strpos($name, 'www.') !== false;
                             if($nameHasLink){
                                 $error = true; 
-                                $errFull = "The name field cannot contain an URL.";
+                                $nameError = "The name field cannot contain an URL.";
                             } 
                                                         
                             if (empty($name)) { 
