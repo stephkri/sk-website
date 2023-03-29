@@ -125,7 +125,13 @@
                             $subject = isset($_POST['subject']) ? trim($_POST['subject']) : '';
                             $email = isset($_POST['email']) ? trim($_POST['email']) : '';
                             $message = isset($_POST['message']) ? trim($_POST['message']) : '';
-                                               
+                            
+                            $nameHasLink = strpos($name, 'http') !== false || strpos($name, 'www.') !== false;
+                            if($nameHasLink){
+                                $error = true; 
+                                $errFull = "The name field cannot contain an URL.";
+                            } 
+                                                        
                             if (empty($name)) { 
                                 $error = true; 
                                 $nameError = "Please enter your first name.";	
@@ -136,6 +142,13 @@
                                 $error = true;
                                 $nameError = "The first name field must contain alphabets and space.";
                             }
+                            
+                            $subjectHasLink = strpos($subject, 'http') !== false || strpos($subject, 'www.') !== false;
+                            if($subjectHasLink){
+                                $error = true; 
+                                $subjectError = "The subject field cannot contain an URL.";
+                            } 
+                            
                             if (empty($subject)) { 
                                 $error = true; 
                                 $subjectError = "Please enter a subject.";	
@@ -148,7 +161,13 @@
                                 $error = true;
                                 $emailError = "Please enter valid email address.";
                             }
-                             if (empty($message)) { 
+                            
+                            $messageHasLink = strpos($message, 'http') !== false || strpos($message, 'www.') !== false;
+                            if($messageHasLink){
+                                $error = true; 
+                                $messageError = "The message field cannot contain an URL.";
+                            } 
+                            if (empty($message)) { 
                                 $error = true; 
                                 $messageError = "Please enter a message.";	
                             }
@@ -159,7 +178,7 @@
                                     die();
                                  } else {
                                     $subject = isset($_POST['subject']) ? trim($_POST['subject']) : '';
-                                   $to = "musikrims@gmail.com";
+                                    $to = "musikrims@gmail.com";
                                     $from = $email;
                                     $subject = $subject;
                                     $headers = "From: $from" . "\r\n";
