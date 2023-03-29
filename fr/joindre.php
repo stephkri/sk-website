@@ -125,6 +125,12 @@
                             $subject = isset($_POST['subject']) ? trim($_POST['subject']) : '';
                             $email = isset($_POST['email']) ? trim($_POST['email']) : '';
                             $message = isset($_POST['message']) ? trim($_POST['message']) : '';
+
+                            $nameHasLink = strpos($name, 'http') !== false || strpos($name, 'www.') !== false;
+                            if($nameHasLink){
+                                $error = true; 
+                                $errFull = "Le champ du nom ne peut pas avoir de URL dedans.";
+                            } 
                                                
                             if (empty($name)) { 
                                 $error = true; 
