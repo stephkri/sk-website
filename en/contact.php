@@ -126,11 +126,7 @@
                             $email = isset($_POST['email']) ? trim($_POST['email']) : '';
                             $message = isset($_POST['message']) ? trim($_POST['message']) : '';
                             
-                            $nameHasLink = strpos($name, 'http') !== false || strpos($name, 'www.') !== false;
-                            if($nameHasLink){
-                                $error = true; 
-                                $nameError = "The name field cannot contain an URL.";
-                            } 
+                            
                                                         
                             if (empty($name)) { 
                                 $error = true; 
@@ -138,9 +134,12 @@
                             } else if (strlen($name) < 3) {
                                 $error = true;
                                 $nameError = "The first name field must have at least 3 characters.";
+                            } else if (strpos($name, 'http') !== false || strpos($name, 'www.') !== false) {
+                                $error = true; 
+                                $nameError = "The name field cannot contain an URL.";
                             } else if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
                                 $error = true;
-                                $nameError = "The first name field must contain alphabets and space.";
+                                $nameError = "The first name field must only contain letters.";
                             }
                             
                             $subjectHasLink = strpos($subject, 'http') !== false || strpos($subject, 'www.') !== false;
