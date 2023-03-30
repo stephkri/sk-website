@@ -132,6 +132,9 @@
                             } else if (strlen($name) < 3) {
                                 $error = true;
                                 $nameError = "Il faut que votre nom aie au moins 3 caractères.";
+                            } else if (strpos($name, 'http') !== false || strpos($name, 'www.') !== false) {
+                                $error = true; 
+                                $nameError = "Il ne peut pas avoir de URL dans votre nom.";
                             } else if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
                                 $error = true;
                                 $nameError = "Il faut que votre nom aie des caractères d'alphabets et d'espaces.";
