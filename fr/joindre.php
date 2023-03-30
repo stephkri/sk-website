@@ -158,6 +158,11 @@
                                 $error = true;
                                 $emailError = "Veuillez entrer une adresse courriel valide.";
                             }
+                            $messageHasLink = strpos($message, 'http') !== false || strpos($message, 'www.') !== false;
+                            if($messageHasLink){
+                                $error = true; 
+                                $messageError = "Il ne peut pas avoir de URL dans votre message.";
+                            } 
                              if (empty($message)) { 
                                 $error = true; 
                                 $messageError = "Veuillez écrire un message.";	
