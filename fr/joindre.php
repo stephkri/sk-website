@@ -140,12 +140,6 @@
                                 $nameError = "Il faut que votre nom aie des caractères d'alphabets et d'espaces.";
                             }
 
-                            $subjectHasLink = strpos($subject, 'http') !== false || strpos($subject, 'www.') !== false;
-                            if($subjectHasLink){
-                                $error = true; 
-                                $subjectError = "Il ne peut pas avoir de URL dans votre sujet.";
-                            } 
-
                             if (empty($subject)) { 
                                 $error = true; 
                                 $subjectError = "Veuillez écrire un sujet.";	
