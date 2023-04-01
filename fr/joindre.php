@@ -144,8 +144,8 @@
                                 $error = true; 
                                 $subjectError = "Veuillez écrire un sujet.";	
                             } else if (strpos($subject, 'http') !== false || strpos($subject, 'www.') !== false) {
-                              $error = true; 
-                              $subjectError = "Il ne peut pas avoir de URL dans le sujet.";
+                                $error = true; 
+                                $subjectError = "Il ne peut pas avoir de URL dans le sujet.";
                             } else if (!preg_match("/^[a-zA-Z ]+$/",$subject)) {
                                 $error = true;
                                 $subjectError = "Il faut que le sujet n'aie que des lettres et des espaces.";
@@ -155,14 +155,12 @@
                                 $error = true;
                                 $emailError = "Veuillez entrer une adresse courriel valide.";
                             }
-                            $messageHasLink = strpos($message, 'http') !== false || strpos($message, 'www.') !== false;
-                            if($messageHasLink){
-                                $error = true; 
-                                $messageError = "Il ne peut pas avoir de URL dans votre message.";
-                            } 
                              if (empty($message)) { 
                                 $error = true; 
                                 $messageError = "Veuillez écrire un message.";	
+                            } else if (strpos($message, 'http') !== false || strpos($message, 'www.') !== false) {
+                                $error = true; 
+                                $messageError = "Il ne peut pas avoir de URL dans votre message.";
                             }
                             
                             if (!$error) {
