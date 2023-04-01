@@ -132,18 +132,25 @@
                             } else if (strlen($name) < 3) {
                                 $error = true;
                                 $nameError = "Il faut que votre nom aie au moins 3 caractères.";
+                            } else if (strpos($name, 'http') !== false || strpos($name, 'www.') !== false) {
+                                $error = true; 
+                                $nameError = "Il ne peut pas avoir de URL dans votre nom.";
                             } else if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
                                 $error = true;
                                 $nameError = "Il faut que votre nom aie des caractères d'alphabets et d'espaces.";
                             }
+
                             if (empty($subject)) { 
                                 $error = true; 
                                 $subjectError = "Veuillez écrire un sujet.";	
-                            }
-                            if(!preg_match("/^[a-zA-Z ]+$/",$subject)) {
+                            } else if (strpos($subject, 'http') !== false || strpos($subject, 'www.') !== false) {
+                                $error = true; 
+                                $subjectError = "Il ne peut pas avoir de URL dans le sujet.";
+                            } else if (!preg_match("/^[a-zA-Z ]+$/",$subject)) {
                                 $error = true;
                                 $subjectError = "Il faut que le sujet n'aie que des lettres et des espaces.";
                             }
+
                             if (!filter_var($email,FILTER_VALIDATE_EMAIL) ) {
                                 $error = true;
                                 $emailError = "Veuillez entrer une adresse courriel valide.";
@@ -151,6 +158,9 @@
                              if (empty($message)) { 
                                 $error = true; 
                                 $messageError = "Veuillez écrire un message.";	
+                            } else if (strpos($message, 'http') !== false || strpos($message, 'www.') !== false) {
+                                $error = true; 
+                                $messageError = "Il ne peut pas avoir de URL dans votre message.";
                             }
                             
                             if (!$error) {

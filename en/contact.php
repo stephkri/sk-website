@@ -109,98 +109,111 @@
                     
                     <p>To request my services, inquire about anything you've seen on here, or just say hi - please fill out the form below and I'll get back to you as soon as I can!</p>
                     
-                    
-                    
                     <?php
                     
-                    $error = false;
-                    // Include the SASLA (Simple Anti Spam Lite Approach) class SPAM protection.
-                    require '../sasla.php';
-                    if(isset($_POST['submit']) && !empty($_POST['submit'])) {
-                        if (Sasla::isASpam()) {
-                            echo '<div style="color: red; text-align:center;" >&#128078; Message failed to pass first spam check validation. </div>';
-                        } else {
-                                 
-                            $name = isset($_POST['name']) ? trim($_POST['name']) : '';
-                            $subject = isset($_POST['subject']) ? trim($_POST['subject']) : '';
-                            $email = isset($_POST['email']) ? trim($_POST['email']) : '';
-                            $message = isset($_POST['message']) ? trim($_POST['message']) : '';
+                        $error = false;
+                        // Include the SASLA (Simple Anti Spam Lite Approach) class SPAM protection.
+                        require '../sasla.php';
+                        if(isset($_POST['submit']) && !empty($_POST['submit'])) {
+                            if (Sasla::isASpam()) {
+                                echo '<div style="color: red; text-align:center;" >&#128078; Message failed to pass first spam check validation. </div>';
+                            } else {
+                                // Set variables for each form field
+                                $name = isset($_POST['name']) ? trim($_POST['name']) : '';
+                                $subject = isset($_POST['subject']) ? trim($_POST['subject']) : '';
+                                $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+                                $message = isset($_POST['message']) ? trim($_POST['message']) : '';
                             
-                            $nameHasLink = strpos($name, 'http') !== false || strpos($name, 'www.') !== false;
-                            if($nameHasLink){
-                                $error = true; 
-                                $errFull = "The name field cannot contain an URL.";
-                            } 
-                                                        
-                            if (empty($name)) { 
-                                $error = true; 
-                                $nameError = "Please enter your first name.";	
-                            } else if (strlen($name) < 3) {
-                                $error = true;
-                                $nameError = "The first name field must have at least 3 characters.";
-                            } else if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
-                                $error = true;
-                                $nameError = "The first name field must contain alphabets and space.";
-                            }
                             
-                            $subjectHasLink = strpos($subject, 'http') !== false || strpos($subject, 'www.') !== false;
-                            if($subjectHasLink){
-                                $error = true; 
-                                $subjectError = "The subject field cannot contain an URL.";
-                            } 
+                                // Perform validation checks on the name field.
+                                // First, check to see if the name field has a value on the form, otherwise, display an error message.
+                                if (empty($name)) { 
+                                    $error = true; 
+                                    $nameError = "Please enter your first name.";	
+
+                                // Otherwise, if the value in the name field is less than three characters, display an error message.
+                                } else if (strlen($name) < 3) {
+                                    $error = true;
+                                    $nameError = "The first name field must have at least 3 characters.";
+                                
+                                // Otherwise, if the name field has an URL, display an error message.
+                                } else if (strpos($name, 'http') !== false || strpos($name, 'www.') !== false) {
+                                    $error = true; 
+                                    $nameError = "The name field cannot contain an URL.";
                             
-                            if (empty($subject)) { 
-                                $error = true; 
-                                $subjectError = "Please enter a subject.";	
-                            }
-                            if(!preg_match("/^[a-zA-Z ]+$/",$subject)) {
-                                $error = true;
-                                $subjectError = "The subject must contain only letters and space.";
-                            }
-                            if (!filter_var($email,FILTER_VALIDATE_EMAIL) ) {
-                                $error = true;
-                                $emailError = "Please enter valid email address.";
-                            }
+                                // Otherwise, if the name field contains anything other than uppercase, or lowercase letters, or a space, display an error message.
+                                } else if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
+                                    $error = true;
+                                    $nameError = "The first name field must only contain letters.";
+                                }
                             
-                            $messageHasLink = strpos($message, 'http') !== false || strpos($message, 'www.') !== false;
-                            if($messageHasLink){
-                                $error = true; 
-                                $messageError = "The message field cannot contain an URL.";
-                            } 
-                            if (empty($message)) { 
-                                $error = true; 
-                                $messageError = "Please enter a message.";	
-                            }
+                                // Perform validation checks on the subject field
+                                // If the subject field is empty, display an error message.
+                                if (empty($subject)) { 
+                                    $error = true; 
+                                    $subjectError = "Please enter a subject.";	
                             
-                            if (!$error) {
-                                if(!empty($_POST['website'])) {
-                                    // Message failed second honeypot spam check
-                                    die();
-                                 } else {
-                                    $subject = isset($_POST['subject']) ? trim($_POST['subject']) : '';
-                                    $to = "musikrims@gmail.com";
-                                    $from = $email;
-                                    $subject = $subject;
-                                    $headers = "From: $from" . "\r\n";
-                                    // To send HTML mail, the Content-type header must be set
-                                    $headers .= 'MIME-Version: 1.0' . "\r\n";
-                                    $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-                                    // Form the email message using an HTML table. 
-                                    $body = "
-                                    <html>
-                                    <body>
-                                    <table style='border-color: #666; font-family: Arial, Helvetica, sans-serif;' cellpadding='10' width='697'>
-                                    <tr><td colspan='2'><h3 style='color:#e020e4'><strong>You have a new message sent via your website's contact form!</strong></h3></td> </tr>
-                                    <tr><td><strong>From:</strong> </td><td>$name</td></tr> 
-                                    <tr><td><strong>Message:</strong> </td><td>$message</td></tr>
-                                    </table>
-                                    </body>
-                                    </html>
-                                    ";
-                                    $success = mail($to,$subject,$body,$headers);
-                                    if (!$success) {
+                                // Otherwise, if the subject field has an URL, display an error message.
+                                } else if (strpos($subject, 'http') !== false || strpos($subject, 'www.') !== false) {
+                                    $error = true; 
+                                    $subjectError = "The subject field cannot contain an URL.";
+                            
+                                // Otherwise, if the subject field has anything other than letters or a space, then display an error message.
+                                } else if (!preg_match("/^[a-zA-Z ]+$/",$subject)) {
+                                    $error = true;
+                                    $subjectError = "The subject must contain only letters (and spaces).";
+                                }
+                            
+                                // Use the php function FILTER_VALIDATE_EMAIL to ensure that the email address entered in the email field is a valid email address.
+                                if (!filter_var($email,FILTER_VALIDATE_EMAIL) ) {
+                                    $error = true;
+                                    $emailError = "Please enter valid email address.";
+                                }
+                            
+                                // Perform validation checks on the message field.
+                                // If the message field is empty, display an error message.
+                                if (empty($message)) { 
+                                    $error = true; 
+                                    $messageError = "Please enter a message.";	
+                                
+                                // Otherwise, if the message field contains an URL, display an error message.
+                                } else if (strpos($message, 'http') !== false || strpos($message, 'www.') !== false) {
+                                    $error = true; 
+                                    $messageError = "The message field cannot contain an URL.";
+                                }
+                            
+                                if (!$error) {
+                                    if(!empty($_POST['website'])) {
+                                        // Message failed second honeypot spam check
+                                        die();
+                                    } else {
+                                        $subject = isset($_POST['subject']) ? trim($_POST['subject']) : '';
+                                        $to = "musikrims@gmail.com";
+                                        $from = $email;
+                                        $subject = $subject;
+                                        $headers = "From: $from" . "\r\n";
+                                        
+                                        // To send HTML mail, the Content-type header must be set
+                                        $headers .= 'MIME-Version: 1.0' . "\r\n";
+                                        $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+                                        // Form the email message using an HTML table. 
+                                        $body = "
+                                        <html>
+                                        <body>
+                                        <table style='border-color: #666; font-family: Arial, Helvetica, sans-serif;' cellpadding='10' width='697'>
+                                        <tr><td colspan='2'><h3 style='color:#e020e4'><strong>You have a new message sent via your website's contact form!</strong></h3></td> </tr>
+                                        <tr><td><strong>From:</strong> </td><td>$name</td></tr> 
+                                        <tr><td><strong>Message:</strong> </td><td>$message</td></tr>
+                                        </table>
+                                        </body>
+                                        </html>
+                                        ";
+                                        $success = mail($to,$subject,$body,$headers);
+                                        // If phpmail has not been successfully sent, display an error message.
+                                        if (!$success) {
                                         echo '<div style="color: red;" >Message Failed &#128078; there was an error sending your message.</div>';
                                     } else {
+                                        // Otherwise, display an email successfully sent message.
                                         echo ' <div style="color:blue; text-align:center;" > Thanks for contacting me. I will respond to your message soon! </div>';
                                     } 
                                 }
