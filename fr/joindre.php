@@ -143,11 +143,14 @@
                             if (empty($subject)) { 
                                 $error = true; 
                                 $subjectError = "Veuillez écrire un sujet.";	
-                            } else if(!preg_match("/^[a-zA-Z ]+$/",$subject)) {
+                            } else if (strpos($subject, 'http') !== false || strpos($subject, 'www.') !== false) {
+                              $error = true; 
+                              $subjectError = "Il ne peut pas avoir de URL dans le sujet.";
+                            } else if (!preg_match("/^[a-zA-Z ]+$/",$subject)) {
                                 $error = true;
                                 $subjectError = "Il faut que le sujet n'aie que des lettres et des espaces.";
                             }
-                            
+
                             if (!filter_var($email,FILTER_VALIDATE_EMAIL) ) {
                                 $error = true;
                                 $emailError = "Veuillez entrer une adresse courriel valide.";
