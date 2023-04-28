@@ -163,7 +163,7 @@
                                 $messageError = "Il ne peut pas avoir de URL dans votre message.";
                             } else if(!preg_match("/^[a-zA-Z. -]+\z/i",$message)) {
                               $error = true;
-                               $messageError = "The message field must contain letters, spaces, periods, and dashes.";
+                               $messageError = "Il ne peut avoir que des lettres, des points et des traits d'union dans votre message.";
                             }
                             
                             if (!$error) {
