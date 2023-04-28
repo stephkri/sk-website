@@ -191,9 +191,9 @@
                                     /     = ending delimiter for my regexp
                                     i     = declares this as a case INsensitive search
                                     */
-                                } else if(!preg_match("/^[a-zA-Z. -]+\z/i",$message)) {
+                                } else if(!preg_match("/^[a-zA-Z.,;:?! -]+\z/i",$message)) {
                                     $error = true;
-                                     $messageError = "The message field must contain letters, spaces, periods, and dashes.";
+                                     $messageError = "One or more of the characters in the message is not permitted.";
                                 }
                             
                                 if (!$error) {
