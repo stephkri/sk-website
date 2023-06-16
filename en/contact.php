@@ -107,7 +107,7 @@
                     
                     <h1>Contact Me</h1>
                     
-                    <p>To request my services, inquire about anything you've seen on here, or just say hi - please fill out the form below and I'll get back to you as soon as I can!</p>
+                    <p>To request my services, inquire about anything you've seen on here, or just say hi - please fill out the form below and i'll get back to you as soon as i can!</p>
                     
                     <?php
                     
