@@ -180,6 +180,20 @@
                                 } else if (strpos($message, 'http') !== false || strpos($message, 'www.') !== false) {
                                     $error = true; 
                                     $messageError = "The message field cannot contain an URL.";
+
+                                    /* PREG_MATCH quick overview:
+                                    ^ = match starting at the beginning of the string
+                                    [ = start a character set
+                                    a-z - = alpha characters, spaces, and dashes
+                                    ]     = end the character set
+                                    +     = must have one or more of the character set defined
+                                    \z    = match ending at the end of the string
+                                    /     = ending delimiter for my regexp
+                                    i     = declares this as a case INsensitive search
+                                    */
+                                } else if(!preg_match("/^[a-zA-Z.,;:?! -]+\z/i",$message)) {
+                                    $error = true;
+                                     $messageError = "One or more of the characters in the message is not permitted.";
                                 }
                             
                                 if (!$error) {

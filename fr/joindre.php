@@ -161,6 +161,9 @@
                             } else if (strpos($message, 'http') !== false || strpos($message, 'www.') !== false) {
                                 $error = true; 
                                 $messageError = "Il ne peut pas avoir de URL dans votre message.";
+                            } else if(!preg_match("/^[a-zA-Z.,;:?! -]+\z/i",$message)) {
+                              $error = true;
+                               $messageError = "Un ou plusieurs caractères du message sont interdits.";
                             }
                             
                             if (!$error) {
